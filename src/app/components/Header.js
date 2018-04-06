@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router";
 
 export const Header = (props) => {
     return (
@@ -8,8 +9,8 @@ export const Header = (props) => {
                     <a className="navbar-brand" href="#">15_React_Router-Router_setup</a>
                 </div>
                 <ul className="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">User</a></li>
+                <li><Link to={"/home"} activeClassName={"active"}>Home</Link></li>
+                <li><Link to={"/user/10"} activeClassName={"active"}>User</Link></li>
                 </ul>
             </div>
         </nav>
